@@ -170,7 +170,7 @@ jobs:
         uses: ophub/flippy-openwrt-actions@main
         if: ${{ steps.download.outputs.status }} == 'success' && !cancelled()
         env:
-          OPENWRT_ARMVIRT: https://github.com/Elda1994/build_n1op/releases/download/N1_openwrt/openwrt-armsr-armv8-generic-rootfs.tar.gz
+          OPENWRT_ARMVIRT: https://github.com/Elda1994/package_n1op/releases/download/N1_openwrt/openwrt-armsr-armv8-generic-rootfs.tar.gz
           SELECT_PACKITPATH: openwrt_packit
           PACKAGE_SOC: ${{ inputs.openwrt_soc }}
           KERNEL_REPO_URL: ${{ inputs.kernel_repo }}
